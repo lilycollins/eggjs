@@ -1,0 +1,246 @@
+2022-04-07 14:32:54,879 WARN 1360 [-/127.0.0.1/-/17ms POST /postAdd] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2022-04-07 14:32:54,881 WARN 1360 [-/127.0.0.1/-/18ms POST /postAdd] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-security\lib\middlewares\csrf.js:39:9)
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-compose\index.js:42:32)
+message: "missing csrf token"
+pid: 1360
+hostname: LD-20210820WSZV
+
+2022-04-07 16:25:45,723 ERROR 816 [-/127.0.0.1/-/8ms GET /eggController] nodejs.Error: Could not find matching close tag for "<%".
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:736:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:721:15)
+    at Template.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:574:12)
+    at Object.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:392:16)
+    at handleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:215:18)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:16)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+
+pid: 816
+hostname: LD-20210820WSZV
+
+2022-04-07 16:26:52,595 ERROR 816 [-/127.0.0.1/-/2ms GET /eggController] nodejs.Error: Could not find matching close tag for "<%".
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:736:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:721:15)
+    at Template.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:574:12)
+    at Object.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:392:16)
+    at handleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:215:18)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:16)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+
+pid: 816
+hostname: LD-20210820WSZV
+
+2022-04-07 16:26:58,997 ERROR 816 [-/127.0.0.1/-/1ms GET /eggController] nodejs.Error: Could not find matching close tag for "<%".
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:736:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:721:15)
+    at Template.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:574:12)
+    at Object.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:392:16)
+    at handleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:215:18)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:16)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+
+pid: 816
+hostname: LD-20210820WSZV
+
+2022-04-07 16:27:34,138 ERROR 816 [-/127.0.0.1/-/1ms GET /eggController] nodejs.Error: Could not find matching close tag for "<%".
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:736:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:721:15)
+    at Template.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:574:12)
+    at Object.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:392:16)
+    at handleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:215:18)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:16)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+
+pid: 816
+hostname: LD-20210820WSZV
+
+2022-04-07 16:27:40,421 ERROR 816 [-/127.0.0.1/-/1ms GET /eggController] nodejs.Error: Could not find matching close tag for "<%".
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:736:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:721:15)
+    at Template.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:574:12)
+    at Object.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:392:16)
+    at handleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:215:18)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:16)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+
+pid: 816
+hostname: LD-20210820WSZV
+
+2022-04-07 16:28:17,752 ERROR 15212 [-/127.0.0.1/-/6ms GET /eggController] nodejs.Error: Could not find matching close tag for "<%".
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:736:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:721:15)
+    at Template.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:574:12)
+    at Object.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:392:16)
+    at handleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:215:18)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:16)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+
+pid: 15212
+hostname: LD-20210820WSZV
+
+2022-04-07 16:28:48,490 ERROR 7372 [-/127.0.0.1/-/5ms GET /eggController] nodejs.Error: Could not find matching close tag for "<%".
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:736:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:721:15)
+    at Template.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:574:12)
+    at Object.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:392:16)
+    at handleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:215:18)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:16)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+
+pid: 7372
+hostname: LD-20210820WSZV
+
+2022-04-07 16:29:16,748 ERROR 17400 [-/127.0.0.1/-/7ms GET /eggController] nodejs.Error: Could not find matching close tag for "<%".
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:736:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:721:15)
+    at Template.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:574:12)
+    at Object.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:392:16)
+    at handleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:215:18)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:16)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+
+pid: 17400
+hostname: LD-20210820WSZV
+
+2022-04-07 16:29:46,311 ERROR 17400 [-/127.0.0.1/-/3ms GET /eggController] nodejs.Error: Could not find matching close tag for "<%".
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:736:19
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:721:15)
+    at Template.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:574:12)
+    at Object.compile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:392:16)
+    at handleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:215:18)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:16)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+
+pid: 17400
+hostname: LD-20210820WSZV
+
+2022-04-07 16:30:54,830 ERROR 18084 [-/127.0.0.1/-/7ms GET /eggController] nodejs.ReferenceError: C:\Users\Laidian\Desktop\learn-demo\eggjs\app\view\index.html:14
+    12|     <h2>name: <%= name %></h2>
+    13|     <h2>age: <%= age %></h2>
+ >> 14|     <!-- <h2>gender: <%= gender %></h2> -->
+    15|     <!-- <h2>gender: <%= arr %></h2> -->
+    16|     <p>我的日常：</p>
+    17|     <ul>
+
+gender is not defined
+    12|     <h2>name: <%= name %></h2>
+    13|     <h2>age: <%= age %></h2>
+ >> 14|     <!-- <h2>gender: <%= gender %></h2> -->
+    15|     <!-- <h2>gender: <%= arr %></h2> -->
+    16|     <p>我的日常：</p>
+    17|     <ul>
+
+gender is not defined
+    at eval (C:\Users\Laidian\Desktop\learn-demo\eggjs\app\view\index.html:21:26)
+    at index (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:682:17)
+    at tryHandleCache (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:254:36)
+    at Object.exports.renderFile (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\ejs\lib\ejs.js:485:10)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:16:11
+    at new Promise (<anonymous>)
+    at EjsView.[EjsView#_render] (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:15:12)
+    at EjsView.render (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view-ejs\lib\view.js:28:36)
+    at ContextView.[contextView#render] (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-view\lib\context_view.js:70:23)
+    at async testEggController.index (C:\Users\Laidian\Desktop\learn-demo\eggjs\app\controller\testEgg.js:15:5)
+path: "C:\\Users\\Laidian\\Desktop\\learn-demo\\eggjs\\app\\view\\index.html"
+pid: 18084
+hostname: LD-20210820WSZV
+
+2022-04-07 17:11:41,534 ERROR 13268 [-/127.0.0.1/-/14ms POST /editCookie/%E5%A5%B9%E5%A5%B9%E5%A5%B9%E5%A5%B9%E5%A5%B9%E5%A5%B9%E5%A5%B9] nodejs.AssertionError: argument value is invalid
+    at new Cookie (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-cookies\lib\cookie.js:25:5)
+    at Cookies.set (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-cookies\lib\cookies.js:123:20)
+    at testEggController.editCookie (C:\Users\Laidian\Desktop\learn-demo\eggjs\app\controller\testEgg.js:65:17)
+    at Object.callFn (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\router.js:186:18
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 13268
+hostname: LD-20210820WSZV
+
+2022-04-11 18:15:28,501 ERROR 13796 [-/127.0.0.1/-/2ms GET /addUser] nodejs.ReferenceError: prompt is not defined
+    at userManage.addUser (C:\Users\Laidian\Desktop\learn-demo\eggjs\app\controller\userManage.js:6:18)
+    at Object.callFn (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 13796
+hostname: LD-20210820WSZV
+
+2022-04-11 18:16:12,081 ERROR 15040 [-/127.0.0.1/-/3ms GET /addUser] nodejs.TypeError: this.prompt is not a function
+    at userManage.addUser (C:\Users\Laidian\Desktop\learn-demo\eggjs\app\controller\userManage.js:6:23)
+    at Object.callFn (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 15040
+hostname: LD-20210820WSZV
+
+2022-04-12 14:53:57,255 ERROR 8292 [-/127.0.0.1/-/3ms GET /todoList] nodejs.TypeError: ctx.fetch is not a function
+    at todoController.index (C:\Users\Laidian\Desktop\learn-demo\eggjs\app\controller\todoList.js:8:9)
+    at Object.callFn (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Laidian\Desktop\learn-demo\eggjs\node_modules\koa-compose\index.js:36:12
+
+pid: 8292
+hostname: LD-20210820WSZV
+

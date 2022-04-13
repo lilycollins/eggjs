@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/css/base.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1> hello eggJs and EJS engine!</h1>
+    <h2>id: <%= id %></h2>
+    <h2>name: <%= name %></h2>
+    <p>我的日常：</p>
+    <ul>
+        <% for(var i=0;i<skills.length;i++){ %>
+        <li><%= skills[i] %></li>
+        <%}%>
+    </ul>
+    <button onclick="addCookie()">增加cookie</button>
+    <button onclick="delCookie()">删除cookie</button>
+    <button onclick="editCookie()">修改cookie</button>
+    <button onclick="getCookie()">查询cookie</button> 
+
+    <p>当前时间：<%= nowTime %></p>
+    <script>
+        function addCookie(){
+            fetch("/addCookie", {
+                method: "post",
+                headers: {
+                    "content-type": "application/json"
+                }
+            })
+        }
+        function delCookie(){
+            fetch("/delCookie", {
+                method: "post",
+                headers: {
+                    "content-type": "application/json"
+                }
+            })
+        }
+        function editCookie(){
+            let val = prompt('请输入要修改的cookie值', '')
+            console.log(val)            
+            fetch("/editCookie/"+val, {
+                method: "post",
+                data: {
+                    "cookie": "val"
+                },
+                headers: {
+                    "content-type": "application/json"
+                }
+            })
+        }
+        function getCookie(){
+            fetch("/getCookie", {
+                method: "get",
+                headers: {
+                    "content-type": "application/json"
+                }
+            })
+        }
+    </script>
+</body>
+</html>

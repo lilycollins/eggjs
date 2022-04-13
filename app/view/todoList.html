@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代办事项</title>
+</head>
+<body>
+    <h3>用户列表</h3>
+    <div style="margin: 30px 0; padding: 20px; border: 1px dashed #999">
+        <div class="userInfo"></div>
+    </div>
+    <div style="margin: 20px 0;">
+        <button onclick="delUser()">删除用户</button> 
+    </div> 
+    姓名：<input type="text" id="name">
+    年龄：<input type="text" id="age">
+    <button onclick="addUser()">添加用户</button>
+     
+
+    <script>
+       getUser()
+       var userList = []
+       function getUser() {
+            fetch('/getUser', {
+                method: "get",
+                headers: {
+                    "content-type": "application/json"
+                }   
+            })
+            .then(response => response.json())
+            .then(data => {
+                userList = JSON.parse(JSON.stringify(data))
+                console.log(data)
+                let str = ''
+                for(let i = 0; i< data.length; i++) {
+                    str+=`<div style="display: flex">
+                            <p class="userP">
+                                <input type="checkbox" value="${data[i].id}" />
+                                <label> 第${i+1}个用户，id:${data[i].id}，name:${data[i].name}，age:${data[i].age}</label>
+                            </p>
+                            <button style="height: 30px;margin: 14px 20px" onclick="updateUser(${i})">修改用户</button>
+                        </div>`
+                }
+                document.querySelector('.userInfo').innerHTML = str
+            });
+        }
+        function addUser () {
+            let data = {
+                name: document.getElementById('name').value,
+                age: document.getElementById('age').value,
+            };
+            fetch('/addUser', {
+                method: "post",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(data)
+            }).then(()=>{
+                getUser()
+                document.getElementById('name').value = ''
+                document.getElementById('age').value = ''
+            })      
+        }
+        function delUser () {
+            let checkList = document.querySelectorAll('.userP input[type="checkbox"]')
+            let checkVal = []
+            for(let i=0;i<checkList.length;i++) {
+                if(checkList[i].checked) {
+                    checkVal.push(checkList[i].value)
+                }
+            }
+            fetch('/delUser', {
+                method: "post",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify({ids: checkVal})
+            }).then(()=>{
+                getUser()
+            }) 
+            console.log(checkList,checkVal)
+        }
+        function updateUser (index) {
+            let val = prompt('请输入要修改的值，用,分割', '')
+            console.log(val, val.split('，'))
+            if(val) {
+            // console.log(userList, index)
+            let data = {
+                id: userList[index].id,
+                name: val.split('，')[0] || userList[index].name,
+                age: val.split('，')[1] || userList[index].age,
+            };
+            console.log(data)
+            fetch('/editUser', {
+                method: "post",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(data)
+            }).then(()=>{
+                getUser()
+                document.getElementById('name').value = ''
+                document.getElementById('age').value = ''
+            })  
+            }      
+        }
+    </script>
+</body>
+</html>

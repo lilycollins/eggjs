@@ -1,0 +1,13 @@
+# POST http://127.0.0.1:7001/postAdd HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name": "sample"
+# }
+
+# POST http://127.0.0.1:7001/newContext HTTP/1.1
+# content-type: application/json
+
+POST http://127.0.0.1:7001/newRequest HTTP/1.1
+content-type: application/json
+token:'hahaahaha'
